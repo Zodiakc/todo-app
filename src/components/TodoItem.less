@@ -1,0 +1,42 @@
+//main:  ../App.css
+@import "../vars.less";
+
+.todo-item{
+    background-color: @paleYellow;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+}
+.todo-completed{
+    background-color: @paleYellow;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+h2,h4 p, span{
+    margin: 0;
+}
+.icon{
+    max-width: 20px;
+}
+.img-block{
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.modal-edit{
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    background-color: black;
+}
